@@ -1,3 +1,4 @@
+// The distance recorder requests that a signal is sent back, it checks the received number and shows a tick on the LED screen before sending a signal
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 45) {
         radio.sendNumber(36)
